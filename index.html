@@ -292,7 +292,7 @@ document.getElementById('menu-show-preview').onclick = function(e)
 
     if (currentPreviewStatus == 'no') {
         this.setAttribute('data-show-preview', 'yes');
-        this.innerHTML = 'Preview Window &#x2713';
+        this.innerHTML = '<i class="fa fa-eye"></i>&nbsp;Preview HTML&nbsp; &#x2713';
 
         if (currentEditorStatus == 'yes') {
             // Normal 50:50 width
@@ -314,7 +314,7 @@ document.getElementById('menu-show-preview').onclick = function(e)
     }
 
     this.setAttribute('data-show-preview', 'no');
-    this.innerHTML = 'Preview Window';
+    this.innerHTML = '<i class="fa fa-eye"></i>&nbsp;Preview HTML&nbsp;';
     return false;
 }
 
@@ -325,7 +325,7 @@ document.getElementById('menu-show-editor').onclick = function(e)
 
     if (currentEditorStatus == 'no') {
         this.setAttribute('data-show-editor', 'yes');
-        this.innerHTML = 'Editor Window &#x2713';
+        this.innerHTML = '<i class="fa fa-edit"></i>&nbsp;Editor HTML&nbsp; &#x2713';
 
         if (currentPreviewStatus == 'yes') {
             // Normal 50:50 width
@@ -345,7 +345,7 @@ document.getElementById('menu-show-editor').onclick = function(e)
         previewWrapper.className = 'preview full-width';
     }
     this.setAttribute('data-show-editor', 'no');
-    this.innerHTML = 'Editor Window';
+    this.innerHTML = '<i class="fa fa-edit"></i>&nbsp;Editor HTML&nbsp;';
     return false;
 }
 
